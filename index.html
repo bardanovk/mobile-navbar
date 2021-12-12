@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left-nav">
+            <button class="slide-button" type="menu">
+<a href="#" onclick="slidebarShow(slidebarMain)">
+<svg width="20" height="18" viewBox="0 0 16 12">
+<path data-name="Rounded Rectangle 81 copy 4" class="cls-1" d="M872,958h-8a1,1,0,0,1-1-1h0a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1h0A1,1,0,0,1,872,958Zm6-5H864a1,1,0,0,1,0-2h14A1,1,0,0,1,878,953Zm0-5H864a1,1,0,0,1,0-2h14A1,1,0,0,1,878,948Z" transform="translate(-863 -946)"></path>
+</svg>
+</a>
+</button>
+            <a href="/">
+                <div class="navbar-logo">
+                    <img class="navbar-logo" src="https://ohmamay.com/wp-content/uploads/2021/11/Oh-Mamay5.svg"></img>
+                </div>
+            </a>
+        </div>
+        <div class="right-nav">
+            <button class="button-nav call-nav">
+<a href="tel:+79998500220">
+<svg class="" width="24" height="24" viewBox="0 0 18.031 17.969">
+<path class="cls-1" d="M673.56,155.153c-4.179-4.179-6.507-7.88-2.45-12.3l0,0a3,3,0,0,1,4.242,0l1.87,2.55a3.423,3.423,0,0,1,.258,3.821l-0.006-.007c-0.744.7-.722,0.693,0.044,1.459l0.777,0.873c0.744,0.788.759,0.788,1.458,0.044l-0.009-.01a3.153,3.153,0,0,1,3.777.264l2.619,1.889a3,3,0,0,1,0,4.243C681.722,162.038,677.739,159.331,673.56,155.153Zm11.17,1.414a1,1,0,0,0,0-1.414l-2.618-1.89a1.4,1.4,0,0,0-.926-0.241l0.009,0.009c-1.791,1.835-2.453,1.746-4.375-.132l-1.05-1.194c-1.835-1.878-1.518-2.087.272-3.922l0,0a1.342,1.342,0,0,0-.227-0.962l-1.87-2.549a1,1,0,0,0-1.414,0l-0.008-.009c-2.7,3.017-.924,6.1,2.453,9.477s6.748,5.54,9.765,2.837Z" transform="translate(-669 -142)"></path>
+</svg>
+</a>
+</button>
+            <button class="button-nav search-nav">
+<a href="/search">
+<svg class="" width="24" height="24" viewBox="0 0 17 17" aria-hidden="true">
+<path class="cls-1" d="M16.709,16.719a1,1,0,0,1-1.412,0l-3.256-3.287A7.475,7.475,0,1,1,15,7.5a7.433,7.433,0,0,1-1.549,4.518l3.258,3.289A1,1,0,0,1,16.709,16.719ZM7.5,2A5.5,5.5,0,1,0,13,7.5,5.5,5.5,0,0,0,7.5,2Z"></path>
+</svg>
+</a>
+</button>
+            <button class="button-nav cart-nav">
+<a href="/cart">
+<svg class="" width="24" height="20" viewBox="0 0 19 16">
+<path data-name="Ellipse 2 copy 9" class="cls-1" d="M956.047,952.005l-0.939,1.009-11.394-.008-0.952-1-0.953-6h-2.857a0.862,0.862,0,0,1-.952-1,1.025,1.025,0,0,1,1.164-1h2.327c0.3,0,.6.006,0.6,0.006a1.208,1.208,0,0,1,1.336.918L943.817,947h12.23L957,948v1Zm-11.916-3,0.349,2h10.007l0.593-2Zm1.863,5a3,3,0,1,1-3,3A3,3,0,0,1,945.994,954.005ZM946,958a1,1,0,1,0-1-1A1,1,0,0,0,946,958Zm7.011-4a3,3,0,1,1-3,3A3,3,0,0,1,953.011,954.005ZM953,958a1,1,0,1,0-1-1A1,1,0,0,0,953,958Z" transform="translate(-938 -944)"></path>
+</svg>
+<div class="cart-ind"></div>
+</a>
+</button>
+        </div>
+    </div>
+
+    <div class="slidebar slidebar-main">
+        <div class="catalog-menu">
+            <ul class="menu-ul">
+                <a class="category-link" href="#" onclick="slidebarShow(slidebarBrands)">
+                    <li class="menu-li li-brands">
+                        <div>Бренды</div>
+                        <div>></div>
+                    </li>
+                </a>
+                <a class="category-link" href="#" onclick="slidebarShow(slidebarHairs)">
+                    <li class="menu-li li-hair">
+                        <div>Волосы</div>
+                        <div>></div>
+                    </li>
+                </a>
+                <a class="category-link" href="#" onclick="slidebarShow(slidebarDecorative)">
+                    <li class="menu-li li-decorative">
+                        <div>Декоративная косметика</div>
+                        <div>></div>
+                    </li>
+                </a>
+                <a class="category-link" href="#" onclick="slidebarShow(slidebarMakeup)">
+                    <li class="menu-li li-makeup">
+                        <div>Макияж</div>
+                        <div>></div>
+                    </li>
+                </a>
+                <a class="category-link" href="#" onclick="slidebarShow(slidebarCare)">
+                    <li class="menu-li li-care">
+                        <div>Основной уход</div>
+                        <div>></div>
+                    </li>
+                </a>
+                <a class="category-link" href="#" onclick="slidebarShow(slidebarBody)">
+                    <li class="menu-li li-body">
+                        <div>Тело</div>
+                        <div>></div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="menu-links">
+            <ul class="menu-ul">
+                <a class="category-link" href="/stocks">
+                    <li class="menu-li">Акции</li>
+                </a>
+                <a class="category-link" href="/ship-payment">
+                    <li class="menu-li">Доставка и оплата</li>
+                </a>
+                <a class="category-link" href="/faq">
+                    <li class="menu-li">Вопрос-ответ</li>
+                </a>
+                <a class="category-link" href="/about">
+                    <li class="menu-li">О компании</li>
+                </a>
+            </ul>
+        </div>
+        <div class="contact">
+            <div class="contact-text">Онлайн помощь с 9:00 — 21:00
+            </div>
+            <div class="contact-email"><a href="mailto:OhMamay@yandex.ru">OhMamay@yandex.ru</a></div>
+            <div class="contact-phone">+7 ХХХ ХХХ ХХ ХХ</div>
+            <div class="contact-text">Мы с удовольствием поможем тебе подобрать продукты, ответим на все вопросы и примем заказ.</div>
+            <div class="social">
+                <a href="#" class="icon" style="background-image: url('http://ohmamay.com/wp-content/uploads/2021/11/footer-insta.svg')"></a>
+                <a href="#" class="icon" style="background-image: url('http://ohmamay.com/wp-content/uploads/2021/11/footer-w.svg')"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slidebar slidebar-brands">
+        <div class="catalog-menu">
+            <ul class="menu-ul">
+                <a class="category-link" href="#" onclick="slidebarHide(slidebarBrands)">
+                    <li class="menu-li li-back">
+                        <div>Назад</div>
+                        <div>
+                            <</div>
+                    </li>
+                </a>
+                <a class="category-link" href="/product-category/brands">
+                    <li class="menu-li">Все бренды</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/amill">
+                    <li class="menu-li">AMILL</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/anskin">
+                    <li class="menu-li">ANSKIN</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/apieu">
+                    <li class="menu-li">Apieu</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/aromatica">
+                    <li class="menu-li">AROMATICA</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/elizavecca">
+                    <li class="menu-li">Elizavecca</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/esthetic-house">
+                    <li class="menu-li">Esthetic House</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/etude-house">
+                    <li class="menu-li">Etude House</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/green-leaf">
+                    <li class="menu-li">Green leaf</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/real-skin">
+                    <li class="menu-li">Real Skin</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/rire">
+                    <li class="menu-li">RiRe</li>
+                </a>
+                <a class="category-link" href="/product-category/brands/secret-key">
+                    <li class="menu-li">Secret Key</li>
+                </a>
+            </ul>
+            </div>
+        </div>
+
+        <div class="slidebar slidebar-hairs">
+            <div class="catalog-menu">
+                <ul class="menu-ul">
+                    <a class="category-link" href="#" onclick="slidebarHide(slidebarHairs)">
+                        <li class="menu-li li-back">
+                            <div>Назад</div>
+                            <div>
+                                <</div>
+                        </li>
+                    </a>
+                    <a class="category-link" href="/product-category/hair">
+                        <li class="menu-li">Все товары</li>
+                    </a>
+                    <a class="category-link" href="/product-category/hair/hair-accessories">
+                        <li class="menu-li">Аксессуары для волос</li>
+                    </a>
+                    <a class="category-link" href="/product-category/hair/hair-conditioners">
+                        <li class="menu-li">Кондиционеры</li>
+                    </a>
+                    <a class="category-link" href="/product-category/hair/hair-care">
+                        <li class="menu-li li-makeup">Уход за волосами</li>
+                    </a>
+                    <a class="category-link" href="/product-category/hair/shampoos">
+                        <li class="menu-li li-makeup">Шампуни</li>
+                    </a>
+                </ul>
+                </div>
+            </div>
+
+            <div class="slidebar slidebar-decorative">
+                <div class="catalog-menu">
+                    <ul class="menu-ul">
+                        <a class="category-link" href="#" onclick="slidebarHide(slidebarDecorative)">
+                            <li class="menu-li li-back">
+                                <div>Назад</div>
+                                <div>
+                                    <</div>
+                            </li>
+                        </a>
+                        <a class="category-link" href="/product-category/decorative-cosmetics">
+                            <li class="menu-li">Все товары</li>
+                        </a>
+                        <a class="category-link" href="/product-category/decorative-cosmetics/makeup-accessories">
+                            <li class="menu-li">Аксессуары для макияжа</li>
+                        </a>
+                        <a class="category-link" href="/product-category/decorative-cosmetics/makeup-fixers">
+                            <li class="menu-li">Фиксаторы макияжа</li>
+                        </a>
+                        <a class="category-link" href="/product-category/decorative-cosmetics/for-eyes-and-eyebrows">
+                            <li class="menu-li">Для глаз и бровей</li>
+                        </a>
+                        <a class="category-link" href="/product-category/decorative-cosmetics/for-lips">
+                            <li class="menu-li">Для губ</li>
+                        </a>
+                        <a class="category-link" href="/product-category/decorative-cosmetics/makeup-basics">
+                            <li class="menu-li">Основы для макияжа</li>
+                        </a>
+                        <a class="category-link" href="/product-category/decorative-cosmetics/powders">
+                            <li class="menu-li">Пудры</li>
+                        </a>
+                        <a class="category-link" href="/product-category/decorative-cosmetics/blush-and-highlighters">
+                            <li class="menu-li">Румяна и хайлайтеры</li>
+                        </a>
+                        <a class="category-link" href="/product-category/decorative-cosmetics/foundations">
+                            <li class="menu-li">Тональные средства</li>
+                        </a>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="slidebar slidebar-makeup">
+                    <div class="catalog-menu">
+                        <ul class="menu-ul">
+                            <a class="category-link" href="#" onclick="slidebarHide(slidebarMakeup)">
+                                <li class="menu-li li-back">
+                                    <div>Назад</div>
+                                    <div>
+                                        <</div>
+                                </li>
+                            </a>
+                            <a class="category-link" href="/product-category/makeup">
+                                <li class="menu-li">Все товары</li>
+                            </a>
+                            <a class="category-link" href="/product-category/makeup/bb-cc-cream">
+                                <li class="menu-li">BB/CC Кремы</li>
+                            </a>
+                            <a class="category-link" href="/product-category/makeup/brows-lashes">
+                                <li class="menu-li">Для бровей и ресниц</li>
+                            </a>
+                            <a class="category-link" href="/product-category/makeup/lips-makeup">
+                                <li class="menu-li">Для губ</li>
+                            </a>
+                            <a class="category-link" href="/product-category/makeup/primers">
+                                <li class="menu-li">Праймеры</li>
+                            </a>
+                            <a class="category-link" href="/product-category/makeup/powder-blush">
+                                <li class="menu-li">Пудры и румяна</li>
+                            </a>
+                            <a class="category-link" href="/product-category/makeup/eye-shadow">
+                                <li class="menu-li">Тени для век</li>
+                            </a>
+                        </ul>
+                        </div>
+                    </div>
+
+                    <div class="slidebar slidebar-care">
+                        <div class="catalog-menu">
+                            <ul class="menu-ul">
+                                <a class="category-link" href="#" onclick="slidebarHide(slidebarCare)">
+                                    <li class="menu-li li-back">
+                                        <div>Назад</div>
+                                        <div>
+                                            <</div>
+                                    </li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care">
+                                    <li class="menu-li">Все товары</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/face-accessories">
+                                    <li class="menu-li">Аксессуары для лица</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/face-masks">
+                                    <li class="menu-li">Маски для лица</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/exfoliators">
+                                    <li class="menu-li">Отшелущивающие средства</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/cleansers">
+                                    <li class="menu-li">Очищающие средства</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/patches">
+                                    <li class="menu-li">Патчи</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/sunscreens-and-gels">
+                                    <li class="menu-li">Солнцезащитные кремы и гели</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/serums-and-ampoules">
+                                    <li class="menu-li">Сыворотки и ампулы</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/toning">
+                                    <li class="menu-li">Тонизирование</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/acne-spot-remedies">
+                                    <li class="menu-li">Точечные средства от акне</li>
+                                </a>
+                                <a class="category-link" href="/product-category/main-care/moisturizers">
+                                    <li class="menu-li">Увлажняющие средства</li>
+                                </a>
+                            </ul>
+                            </div>
+                        </div>
+
+                        <div class="slidebar slidebar-body">
+                            <div class="catalog-menu">
+                                <ul class="menu-ul">
+                                    <a class="category-link" href="#" onclick="slidebarHide(slidebarBody)">
+                                        <li class="menu-li li-back">
+                                            <div>Назад</div>
+                                            <div>
+                                                <</div>
+                                        </li>
+                                    </a>
+                                    <a class="category-link" href="/product-category/body">
+                                        <li class="menu-li">Все товары</li>
+                                    </a>
+                                    <a class="category-link" href="/product-category/body/self-tanning">
+                                        <li class="menu-li">Автозагар</li>
+                                    </a>
+                                    <a class="category-link" href="/product-category/body/hygiene">
+                                        <li class="menu-li">Гигиена</li>
+                                    </a>
+                                    <a class="category-link" href="/product-category/body/body-mists">
+                                        <li class="menu-li">Мисты для тела</li>
+                                    </a>
+                                    <a class="category-link" href="/product-category/body/body-cleansers">
+                                        <li class="menu-li">Очищающие средства для тела</li>
+                                    </a>
+                                    <a class="category-link" href="/product-category/body/body-moisturizers">
+                                        <li class="menu-li">Увлажняющие средства для тела</li>
+                                    </a>
+                                    <a class="category-link" href="/product-category/body/feet-care">
+                                        <li class="menu-li">Уход за ногами</li>
+                                    </a>
+                                    <a class="category-link" href="/product-category/body/hand-care">
+                                        <li class="menu-li">Уход за руками</li>
+                                    </a>
+                                </ul>
+                                </div>
+                            </div>
+
+                            <div class="slidebar-around"></div>
+
+                            <script src="./script.js"></script>
+</body>
+
+</html>

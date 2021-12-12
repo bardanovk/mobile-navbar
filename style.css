@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: none;
+    background-color: white;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+}
+
+.left-nav {
+    display: flex;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-around;
+    min-width: 80px;
+    width: 25%;
+}
+
+.navbar-logo {
+    width: 140px;
+    height: 70px;
+    transition: .3s;
+}
+
+.navbar-logo:hover {
+    opacity: .8;
+}
+
+.slide-button {
+    margin: 15px 30px;
+    transition: .3s;
+}
+
+.slide-button:hover {
+    opacity: .3;
+}
+
+.button-nav {
+    margin: 5px;
+    transition: .3s;
+}
+
+.button-nav:hover {
+    opacity: .3;
+}
+
+.cart-nav {
+    position: relative;
+}
+
+.cart-ind {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 5px;
+    top: 15px;
+    right: -10px;
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+.slidebar {
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    min-height: 100vh;
+    background-color: white;
+    /* display: none; */
+    font-family: 'Roboto', sans-serif;
+    transition: .3s;
+    border-right: 2px solid rgb(99, 99, 99);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.showed {
+    /* display: block; */
+    left: 0px !important;
+}
+
+.slidebar-around {
+    position: absolute;
+    background-color: rgba(66, 66, 66, 0.8);
+    z-index: 90;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: -100vw;
+    /* filter: blur(10px); */
+    /* display: none; */
+}
+
+.menu-ul {
+    list-style: none;
+    padding: 15px 0px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.menu-li {
+    padding: 15px 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-li:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.menu-li:active {
+    background-color: rgb(124, 124, 124);
+}
+
+.li-back {
+    color: rgb(124, 124, 124);
+}
+
+.dropdown-menu {
+    z-index: 110;
+    /* display: none; */
+    background-color: white;
+    padding: 0px;
+    position: absolute;
+    border: 1px solid rgb(156, 156, 156);
+    right: -10px;
+    top: 20px;
+}
+
+.contact {
+    border-top: 2px solid rgb(190, 189, 189);
+    padding: 15px 0px;
+    margin: 0px 20px;
+}
+
+.contact-text {
+    padding: 25px 0;
+}
+
+.contact-email {
+    font-weight: bold;
+}
+
+.contact-email a:hover {
+    color: rgb(90, 90, 90);
+}
+
+.contact-phone {
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    border-top: 2px solid rgb(190, 189, 189);
+    margin: 15px 0;
+    padding: 15px 35px;
+}
+
+.social a.icon {
+    display: block;
+    height: 41px !important;
+    width: 40px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 px;
+}
+
+
+/* полоса прокрутки (скроллбар) */
+
+::-webkit-scrollbar {
+    width: 4px;
+    /* ширина для вертикального скролла */
+    height: 8px;
+    /* высота для горизонтального скролла */
+    background-color: #ffffff;
+}
+
+
+/* ползунок скроллбара */
+
+::-webkit-scrollbar-thumb {
+    background-color: #843465;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #dddddd9d;
+}
